@@ -27,6 +27,7 @@ Users should be able to:
 <img src="images/desktop-screenshot.png">
 
 **MOBILE VIEW**
+
 <img src="images/mobile-screenshot.png">
 
 ### Links
