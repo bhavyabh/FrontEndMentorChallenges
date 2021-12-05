@@ -24,7 +24,7 @@ Users should be able to:
 ### Screenshot
 
 **DESKTOP VIEW**
-<img src="images/desktop-screenshot.png" height=500px width=500px>
+<img src="images/desktop-screenshot.png">
 
 **MOBILE VIEW**
 <img src="images/mobile-screenshot.png">
