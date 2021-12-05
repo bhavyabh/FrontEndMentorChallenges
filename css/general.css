@@ -1,0 +1,168 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --light-voilet: hsl(245, 83%, 68%); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px/16px = 0.625; Percentage of user's browser font-size */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--desaturated-blue);
+  
+
+  background: no-repeat top/100% url("../images/pattern-background-desktop.svg");
+  background-color: var(--pale-blue);
+}
+
+.card {
+  width: 45rem;
+  margin: 10rem auto 5rem auto;
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.card-content {
+  text-align: center;
+  width: 80%;
+  margin: 3.6rem auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 2.4rem;
+}
+
+.card-pricing {
+  margin: 2.4rem 0;
+  padding: 1.6rem 3.2rem;
+  background-color: var(--very-pale-blue);
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.music-icon {
+  color: var(--desaturated-blue);
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: var(--pale-blue);
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.price-plan {
+  margin-left: 1.6rem;
+}
+
+.price-text {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn--change,
+.btn--change:link,
+.btn--change:visited {
+  margin-left: auto;
+  color: var(--bright-blue);
+  text-decoration: underline;
+}
+
+.btn--change:hover,
+.btn--change:active {
+  text-decoration: none;
+  color: var(--light-voilet)
+}
+
+.btn--payment,
+.btn--payment:link,
+.btn--payment:visited {
+  background-color: var(--bright-blue);
+  padding: 1.2rem;
+  color: var(--very-pale-blue);
+  box-shadow: 0 1.6rem 1rem 0.1rem hsla(245, 75%, 52%, 0.15);
+}
+
+.btn--payment:hover,
+.btn--payment:active {
+  background-color: var(--light-voilet);
+}
+
+.btn--cancel,
+.btn--cancel:link,
+.btn--cancel:visited {
+  margin: 2.4rem 0;
+  color: inherit;
+}
+
+.btn--cancel:hover,
+.btn--cancel:active {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*********************************************/
+/*      BELOW 544px(34*16 = 544px) (Phones) */
+/*********************************************/
+@media (max-width: 34em) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .card-pricing {
+    padding: 1rem 2rem;
+  }
+}
