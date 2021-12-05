@@ -23,10 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-DESKTOP VIEW
+**DESKTOP VIEW**
 <img src="images/desktop-screenshot.png">
 
-MOBILE VIEW
+
+**MOBILE VIEW**
 <img src="images/mobile-screenshot.png">
 
 ### Links
